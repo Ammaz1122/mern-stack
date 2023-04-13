@@ -1,21 +1,14 @@
-function palindrom(str) {  
-  
-   
-    let  len = str.length;  
-    //maadm
 
-    for (let i = 0; i < len / 2; i++) {  
-   
-        if (str[i] !== str[len - 1 - i]) {  
-            return( 'It is not a palindrome');  
-        }  
-    }  
-    return("its a palindrom")
-}  
+let string = prompt("Enter a string ");
+let leng = string.length;
+
+for(var i= 0; i< leng / 2; i++ )
+{
+    if(string[i] != string[leng -1 - i])
+    alert("Not palindrom");
+}
+
+alert('palindrom')
 
 
-let string = prompt('Enter a string ');  
-  
-let value = palindrom(string);  
-  
-alert(value) 
+// alert(leng)
